@@ -1,0 +1,98 @@
+{
+  "properties": [
+    {
+      "name": "compensation.event.enabled",
+      "type": "java.lang.Boolean",
+      "description": "是否开启事件补偿自动注册",
+      "sourceType": "com.uaepay.basis.compensation.event.CompensationEventAutoConfiguration",
+      "defaultValue": "true"
+    },
+    {
+      "name": "compensation.event.dataSourceBeanName",
+      "type": "java.lang.String",
+      "description": "事件补偿使用的数据源BeanName",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties"
+    },
+    {
+      "name": "compensation.event.allowJobRetryDelay",
+      "type": "java.time.Duration",
+      "description": "事件落地后允许定时任务获取并执行的延迟，一定程度上避免异步处理和定时任务同时执行",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties"
+    },
+    {
+      "name": "compensation.event.retryBatchSize",
+      "type": "int",
+      "description": "重试批次大小",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties"
+    },
+    {
+      "name": "compensation.event.retryIntervals",
+      "type": "java.util.List<java.time.Duration>",
+      "description": "重试时间间隔",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties"
+    },
+    {
+      "name": "compensation.event.poolConfig.corePoolSize",
+      "type": "java.time.Duration",
+      "description": "执行线程池corePoolSize",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties.PoolConfig"
+    },
+    {
+      "name": "compensation.event.poolConfig.maxPoolSize",
+      "type": "java.time.Duration",
+      "description": "执行线程池maxPoolSize",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties.PoolConfig"
+    },
+    {
+      "name": "compensation.event.poolConfig.queueCapacity",
+      "type": "java.time.Duration",
+      "description": "执行线程池queueCapacity",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties.PoolConfig"
+    },
+    {
+      "name": "compensation.event.poolConfig.keepAliveSeconds",
+      "type": "java.time.Duration",
+      "description": "执行线程池keepAliveSeconds",
+      "sourceType": "com.uaepay.basis.compensation.event.domain.CompensationProperties.PoolConfig"
+    },
+    {
+      "name": "compensation.event.job.disabled",
+      "type": "java.lang.Boolean",
+      "description": "定时任务是否禁用",
+      "sourceType": "com.uaepay.basis.compensation.event.job.CompensationEventJob",
+      "defaultValue": "false"
+    },
+    {
+      "name": "compensation.event.job.overwrite",
+      "type": "java.lang.Boolean",
+      "description": "是否覆盖注册中心配置",
+      "sourceType": "com.uaepay.basis.compensation.event.job.CompensationEventJob",
+      "defaultValue": "false"
+    },
+    {
+      "name": "compensation.event.job.suffix",
+      "type": "java.lang.String",
+      "description": "任务名称后缀",
+      "sourceType": "com.uaepay.basis.compensation.event.job.CompensationEventJob",
+      "defaultValue": ""
+    },
+    {
+      "name": "compensation.event.job.crontab",
+      "type": "java.lang.String",
+      "description": "定时任务cron",
+      "sourceType": "com.uaepay.basis.compensation.event.job.CompensationEventJob"
+    },
+    {
+      "name": "compensation.event.job.sharding-count",
+      "type": "int",
+      "description": "事件补偿定时任务分片数",
+      "sourceType": "com.uaepay.basis.compensation.event.job.CompensationEventJob"
+    },
+    {
+      "name": "compensation.event.job.handlerCodeWhiteList",
+      "type": "java.lang.String",
+      "description": "处理器服务编码白名单",
+      "sourceType": "com.uaepay.basis.compensation.event.job.CompensationEventJob"
+    }
+  ]
+}
