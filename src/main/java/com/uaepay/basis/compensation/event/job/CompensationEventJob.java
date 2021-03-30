@@ -13,7 +13,7 @@ import com.uaepay.job.starter.base.AbstractSimpleJob;
 /**
  * 事件补偿重试
  * 
- * @author zc
+ * @author cc
  */
 @ElasticJobConfig(jobCode = "${spring.application.name}_compensationEventJob${compensation.event.job.suffix:}",
     cron = "${compensation.event.job.crontab}", shardingCount = "${compensation.event.job.sharding-count}",

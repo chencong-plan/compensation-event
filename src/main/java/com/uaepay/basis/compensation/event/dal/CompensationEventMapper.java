@@ -8,7 +8,7 @@ import com.uaepay.basis.compensation.event.dal.domain.CompensationEventDO;
 import com.uaepay.basis.compensation.event.dal.extend.SimpleSelectExtendedLanguageDriver;
 
 /**
- * @author zc
+ * @author cc
  */
 public interface CompensationEventMapper {
 

@@ -19,7 +19,7 @@ import com.uaepay.basis.compensation.event.domain.CompensationProperties;
 /**
  * 事件补偿自动配置
  * 
- * @author zc
+ * @author cc
  */
 @ConditionalOnProperty(prefix = "compensation.event", name = "enabled", matchIfMissing = true)
 @Configuration

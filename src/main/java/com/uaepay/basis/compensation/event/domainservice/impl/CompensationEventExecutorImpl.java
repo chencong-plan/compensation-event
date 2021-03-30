@@ -29,7 +29,7 @@ import com.uaepay.basis.compensation.event.service.CompensationEventHandler;
 /**
  * 事件执行器
  * 
- * @author zc
+ * @author cc
  */
 @Service
 public class CompensationEventExecutorImpl implements CompensationEventExecutor {

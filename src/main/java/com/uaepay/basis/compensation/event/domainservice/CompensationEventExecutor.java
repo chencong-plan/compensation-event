@@ -7,7 +7,7 @@ import com.uaepay.basis.compensation.event.domain.CompensationEvent;
 import com.uaepay.basis.compensation.event.domain.ExecuteResult;
 
 /**
- * @author zc
+ * @author cc
  */
 public interface CompensationEventExecutor {
 
